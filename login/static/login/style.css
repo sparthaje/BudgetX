@@ -2,9 +2,7 @@ body{
     background-color: #EEEEEE;
 }  
 
-#textField{
-        border-radius:20px;
-        
-        
-    }
+input {
+    border-radius: 20px;
+}
     
