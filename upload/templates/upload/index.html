@@ -1,7 +1,18 @@
+<<<<<<< HEAD
 <b> What do you want your spending category to be? And how much money do you want to allocate to it?</b>
 
 <form action="/budgethandler/" method="post">
 Category Name: <input type="text" name="category"><br/>
 Amount Allocated: <input type="text" name="amount"><br/>
     <input type="submit" value="Submit">
+=======
+<form action="/signup_handler/" method="post">
+    {% csrf_token %}
+
+    New Catagory Name: <input id="textField" type="text" name="username"><br/><br/>
+    Password: <input id="textField" type="password" name="password"><br/><br/>
+    Email: <input id="textField" type="text" name="email"><br/><br/>
+    <input type="submit" value="Sign Up">
+     
+>>>>>>> 8909015ffdd1b0afea83eb6e7969e5e05bc6bf9d
 </form>
