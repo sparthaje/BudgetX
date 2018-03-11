@@ -1,11 +1,13 @@
 <b> SIGN UP </b>
+{% load static %}
 
+<link rel="stylesheet" type="text/css" href="{% static 'login/style.css' %}" />
 <form action="/signup_handler/" method="post">
     {% csrf_token %}
 
-    Username: <input type="text" name="username"><br/>
-    Password: <input type="password" name="password"><br/>
-    Email: <input type="text" name="email"><br/>
+    Username: <input id="textField" type="text" name="username"><br/>
+    Password: <input id="textField" type="password" name="password"><br/>
+    Email: <input id="textField" type="text" name="email"><br/>
     <input type="submit" value="Sign Up">
      
 </form>
@@ -15,8 +17,8 @@
 <form action="/login_handler/" method="post">
     {% csrf_token %}
 
-    Username: <input type="text" name="usr"><br/>
-    Password: <input type="password" name="pss"><br/>
-    <input type="submit" value="Sign Up">
+    Username: <input id="textField" type="text" name="usr"><br/>
+    Password: <input id="textField" type="password" name="pss"><br/>
+    <input id="textField" type="submit" value="Sign Up">
      
 </form> 
