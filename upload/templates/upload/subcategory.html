@@ -1,6 +1,38 @@
+<<<<<<< HEAD
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'upload/style.css' %}" />
+
+<div id="header">
+<span id = 'title'>Budget</span>
+=======
 {% if category %}
 
 {% category %}
 
 {% endif %}
+>>>>>>> 8b2838949d5bb6f6ae0a5750450c821e0f68be28
 
+<img id = 'logo' src="{% static 'login/logo.svg' %}"/>
+
+</div>
+
+<div id="content">
+<br/><b> {{ name }}</b>
+
+<form action="/upload/sub_handler/" method="post">
+    {% csrf_token %}
+    <br/>
+    Sub Catagory Name <br/>
+    <input type="text" name="name" placeholder="Enter name..."><br/> <br/>
+    Percent Allocated (Out of 100) <br/>
+    <input type="text" name="percent" placeholder="Enter max budget..."><br/>
+    <input type="hidden" name="category" value='{{name}}'><br/>
+    <input type="submit" value="Submit" class = 'button'/>
+</form>
+
+<a href = '/upload/' style='text-decoration: none;'>
+    <div class='divbutton'>
+        <span>Return to dashboard</span>
+    </div>
+</a>
+</div>

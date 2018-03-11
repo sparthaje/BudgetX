@@ -7,7 +7,7 @@ class BudgetCategory(models.Model):
     total_cost = models.IntegerField(default = 0)
 
 class SubBudgets(models.Model):
-    budget_catagory = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    budget_catagory = models.ForeignKey(BudgetCategory, on_delete=models.CASCADE, null=True, blank=True)
     name = models.CharField(max_length = 50)
     percent = models.IntegerField(default = 0)
     

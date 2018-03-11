@@ -1,8 +1,24 @@
-<b> What do you want your spending category to be? And how much money do you want to allocate to it?</b>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'upload/style.css' %}" />
 
-<form action="/upload/budgethandler/" method="post">
-{% csrf_token %}
-Category Name: <input type="text" name="category"><br/>
-Amount Allocated: <input type="text" name="amount"><br/>
-<input type="submit" value="Submit">
+<div id="header">
+<span id = 'title'>Budget</span>
 
+<img id = 'logo' src="{% static 'login/logo.svg' %}"/>
+
+</div>
+
+<div id='content'>
+
+    <br/><b> What do you want your spending category to be? And how much money do you want to allocate to it?</b>
+
+    <form action="budgethandler/" method="post">
+    {% csrf_token %}
+    <br/>
+    Category Name <br/>
+    <input type="text" name="category" placeholder="Enter name..."><br/> <br/>
+    Amount Allocated <br/>
+    <input type="text" name="amount" placeholder="Enter max budget..."><br/>
+    <input type="submit" value="Submit" class = 'button'/>
+
+</div>

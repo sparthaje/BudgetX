@@ -3,6 +3,9 @@ body{
     font-family: arial;
 }  
 
+form {
+}
+
 input {
     border-radius: 5px;
     border: 1px solid #CCCCCC; 
@@ -28,19 +31,6 @@ input {
     background-color: #7cc91f;
 }
 
-#content1 {
-    position: absolute;
-    float: left;
-    margin-left: 15%;
-    margin-top: 2%;
-}
-
-#content2 {
-    position: absolute;
-    float: right;
-    margin-left: 55%;
-    margin-top: 2%;
-}
 
 #header {
     height: 4em;
@@ -59,4 +49,36 @@ input {
     width: 5%;
     float: left;
     margin-left: 90%;
+}
+
+b {
+    font-size: 25px;
+    color: #7cc91f;
+}
+
+.divbutton {
+    position: relative;
+    width: 15em;
+    height: 3em;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #92EA29;
+    color: white;
+    border: 1px solid #FFFFFF; 
+    cursor:pointer;	
+    line-height: 3em;
+}
+
+.divbutton:hover {
+    background-color: #7cc91f;
+}
+
+.divbutton span {
+    width: 3em;
+    text-align: center;
+    margin-left: 3em;
+}
+
+#content {
+    margin-left: 5%;
 }
