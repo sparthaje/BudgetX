@@ -2,6 +2,7 @@
 {% load static %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'login/style.css' %}" />
+
 <form action="/signup_handler/" method="post">
     {% csrf_token %}
 
