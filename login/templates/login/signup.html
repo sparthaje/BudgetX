@@ -1,7 +1,15 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'login/style.css' %}" />
 
-<div id='content'>
+<div id="header">
+<span id = 'title'>Budget</span>
+
+<img id = 'logo' src="{% static 'login/logo.svg' %}"/>
+
+</div>
+
+
+<div id='content1'>
 <b> SIGN UP </b>
 <br/>
 <br/>
@@ -9,21 +17,28 @@
 <form action="/signup_handler/" method="post">
     {% csrf_token %}
     
-    Username: <input id="textField" type="text" name="username"><br/><br/>
-    Password: <input id="textField" type="password" name="password"><br/><br/>
-    Email: <input id="textField" type="text" name="email"><br/><br/>
+    Username <br/>
+    <input id="textField" type="text" name="username"><br/><br/>
+    Password <br/>
+    <input id="textField" type="password" name="password"><br/><br/>
+    Email <br/>
+    
+    <input id="textField" type="text" name="email"><br/><br/>
     <input type="submit" value="Sign Up" class="button">
      
 </form>
-
+</div>
+<div id="content2">
 <b> LOGIN </b>
 <br/>
 <br/>
 <form action="/login_handler/" method="post">
     {% csrf_token %}
 
-    Username: <input id="textField" type="text" name="usr"><br/><br/>
-    Password: <input id="textField" type="password" name="pss"><br/><br/>
+    Username <br/>
+    <input id="textField" type="text" name="usr"><br/><br/>
+    Password <br/>
+    <input id="textField" type="password" name="pss"><br/><br/>
     <input type="submit" value="Log In" class="button">
      
 </form> 
