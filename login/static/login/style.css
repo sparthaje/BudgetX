@@ -1,8 +1,32 @@
 body{
-    background-color: #EEEEEE;
+    background-color: #ffffff;
+    font-family: arial;
 }  
 
 input {
-    border-radius: 20px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC; 
+    height: 2em;
+    width: 30em;
+    font-size: 20px;
 }
-    
+
+.button {
+    width: 30em;
+    height: 5em;
+    border-radius: 5px;
+    background-color: #92EA29;
+    color: white;
+    border: 1px solid #FFFFFF; 
+    font-size: 11px;
+    cursor:pointer;	
+}
+
+.button:hover{
+    background-color: #7cc91f;
+}
+
+#content {
+    margin-left: 10%;
+    margin-top: 2%;
+}
