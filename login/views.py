@@ -26,4 +26,4 @@ def login_handler(request):
         dj_login(request, user)
     else:
         return HttpResponseRedirect('/signup/')
-    return HttpResponse('hello')
+    return HttpResponseRedirect('/upload/')

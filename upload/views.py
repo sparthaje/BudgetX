@@ -1,14 +1,15 @@
 from django.shortcuts import render
-from dashboard.models import BudgetReader, SubBudgets
+from dashboard.models import BudgetCategory, SubBudgets
 from django.contrib.auth.models import User
+
 def index(request):
     return render(request, 'upload/index.html')
+
 def budgethandler(request):
     category= request.POST["category"]
-    u=request.user()
+    user = request.user
     amount=request.POST["amount"]
-    cat=user.BudgetReader.create(user=u, name=category, total_cost=amount)
+    cat = user.budgetcategory_set.create(name=category, total_cost=amount)
     cat.save()
-    return HttpResponseRedirect("/subcategory/")
-def subcategory(request):
-    return render(request, 'upload/subcategory')
+    context = {"name" : category}
+    return render(request, 'upload/subcategory.html', context)
