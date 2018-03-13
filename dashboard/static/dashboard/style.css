@@ -1,0 +1,151 @@
+body{
+    background-color: #fdfdfd;
+    font-family: arial;
+}  
+
+input {
+    border-radius: 5px;
+    border: 1px solid #CCCCCC; 
+    height: 3em;
+    width: 30em;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.button {
+    width: 30em;
+    height: 4em;
+    border-radius: 5px;
+    background-color: #92EA29;
+    color: white;
+    border: 1px solid #FFFFFF; 
+    cursor:pointer;	
+}
+
+.button:hover{
+    background-color: #7cc91f;
+}
+
+
+#header {
+    height: 4em;
+    margin: -0.5%;
+    padding: 5px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, .80);
+}
+
+#title {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 83%;
+    font-size: 32px;
+    font-family: cambria;
+}
+
+#logo {
+    position: absolute;
+    width: 5%;
+    float: left;
+    margin-left: 90%;
+}
+
+b {
+    font-size: 25px;
+    color: #7cc91f;
+}
+
+.divbutton {
+    position: relative;
+    width: 15em;
+    height: 3em;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #92EA29;
+    color: white;
+    border: 1px solid #FFFFFF; 
+    cursor:pointer;	
+    line-height: 3em;
+}
+
+.divbutton:hover {
+    background-color: #7cc91f;
+}
+
+.divbutton span {
+    width: 3em;
+    text-align: center;
+    margin-left: 3em;
+}
+
+#content {
+    margin-left: 5%;
+}
+
+#heading {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 2%;
+    font-size: 32px;
+    font-family: arial;
+    color: #7cc91f;
+}
+
+#panel {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, .20), -1px -1px 5px rgba(20, 20, 20, .14);
+    padding: 10px;
+    width: 74%;
+    text-align: center;
+    height: 3em;
+    margin-left: 13%;
+    line-height: 3em;
+    font-size: 20px;
+    font-weight: bold;
+}
+#panel #money {
+    color: #7cc91f;
+    font-weight: 300;   
+}
+
+#link {
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    margin-left: 70%;
+    font-size: 20px;
+    line-height: 2em;
+    color: white;
+    background-color: #7cc91f;
+    border-radius: 5px;
+    padding: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 2em;
+    margin-top: 1%; 
+    
+}
+
+.graph {
+    width: 100%;
+    height: 50%;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, .80);
+    background-color: white;  
+    padding: 2em;
+    padding-top: 2em;
+}
+    
+.bar {
+    height: 4em;
+    margin-bottom: 3em;
+    display: inline-block;
+    position: relative;
+    background-color: #7cc91f;
+    background: linear-gradient(to bottom left, #89e51b, #7cc91f); 
+    border-radius: 7px;
+    text-align: center;
+    color: white;
+    line-height: 4em;
+    font-size: 15px;
+}

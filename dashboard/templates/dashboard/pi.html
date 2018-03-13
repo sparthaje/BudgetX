@@ -1,0 +1,30 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard/style.css' %}" />
+
+<head>
+    <title>BudgetX</title>
+</head>
+
+<div id="header" style="">
+    <span id = 'heading'>{{bcategory.name}}</span>
+    
+    <a href='/dashboard/' style='color: black;'>
+    <span id = 'title'>Budget</span>
+
+    <img id = 'logo' src="{% static 'login/logo.svg' %}"/>
+    </a>
+</div>
+
+<body>
+<br/><br/>
+<b style="margin-left: 2%;"> Budget for {{ bcategory.name }} breakdown </b>
+    
+<br/><br/>
+<div class="graph">
+    {% for sbudget in sbudgets %}
+        <div style="width: {{sbudget.percent}}%;" class="bar">{{ sbudget.name }} ({{ sbudget.percent }}%)</div>
+    {% endfor %}
+</div>
+    
+    
+</body>

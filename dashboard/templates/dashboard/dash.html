@@ -1,0 +1,33 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard/style.css' %}" />
+<head>
+    <title>BudgetX</title>
+</head>
+<div id="header" style="">
+    <span id = 'heading'>Dashboard</span>
+    
+    <a href='/upload/' id='link'> + Budget Plan </a>
+    
+    <span id = 'title'>Budget</span>
+
+    <img id = 'logo' src="{% static 'login/logo.svg' %}"/>
+
+</div>
+
+<br/>
+<br/>
+
+{% for budget in budgets %}
+
+    <form id= {{budget.name}} method="post" action="/dashboard/detail/">
+    {% csrf_token %}
+    <input type="hidden" name="budget_name" value= {{ budget.name }} /> 
+    <a onclick="document.getElementById('{{budget.name}}').submit();">
+        <div id="panel">
+        {{ budget.name }} - <span id="money">${{ budget.total_cost }}</span>
+        </div>
+    <br/>    
+    </a>
+    </form>
+
+{% endfor %}
