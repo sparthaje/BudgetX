@@ -141,8 +141,8 @@ b {
     margin-bottom: 3em;
     display: inline-block;
     position: relative;
-    background-color: #7cc91f;
-    background: linear-gradient(to bottom left, #89e51b, #7cc91f); 
+/*    background-color: #7cc91f;*/
+/*    background: linear-gradient(to bottom left, #89e51b, #7cc91f); */
     border-radius: 7px;
     text-align: center;
     color: white;

@@ -21,8 +21,8 @@
     
 <br/><br/>
 <div class="graph">
-    {% for sbudget in sbudgets %}
-        <div style="width: {{sbudget.percent}}%;" class="bar">{{ sbudget.name }} ({{ sbudget.percent }}%)</div>
+    {% for b, c in sbudgets %}
+        <div style="width: {{b.percent}}%; background-color: {{c}};" class="bar">{{ b.name }} ({{ b.percent }}%)</div>
     {% endfor %}
 </div>
     
