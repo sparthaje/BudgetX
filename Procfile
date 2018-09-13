@@ -1,1 +1,1 @@
-web: gunicorn BudgetX.wsgi
+web: gunicorn gettingstarted.wsgi --log-file -
