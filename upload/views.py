@@ -7,7 +7,7 @@ def index(request):
     return render(request, 'upload/index.html')
 
 def budgethandler(request):
-    category= request.POST["category"]
+    category= request.POST["category"].replace(" ", "oXo")
     user = request.user
     amount=request.POST["amount"]
     cat = user.budgetcategory_set.create(name=category, total_cost=amount)
